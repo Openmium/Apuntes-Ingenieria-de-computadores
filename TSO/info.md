@@ -1,6 +1,6 @@
 # 🐧 Taller de Sistemas Operativos
 
-No te confíes con esta asignatura o posiblemente la veas más de lo que te gustaría.  
+No te confíes con esta asignatura o la verás más de lo que te gustaría.  
 Es una asignatura fácil, pero el problema es el modelo de examen: un tipo test muy parecido cada vez y comandos súper mezclados.  
 Vas a tener que tener una **bash** en la cabeza.  
 
