@@ -19,3 +19,9 @@ Las clases no estaban muy preparadas, y no siempre te orientaba bien de cara al 
 - Entrevistas → [🔗 YouTube – Charlas de Seguridad](https://www.youtube.com/watch?v=lQpE0pAKOzE&t=6910s)  
 - Webs → [🔗 INCIBE (Instituto Nacional de Ciberseguridad)](https://www.incibe.es/)  
 - Consejos → Sobre herramientas como **Yubikeys**, **Google Authenticator**, etc.
+
+---
+
+🎧 Si te interesa la ciberseguridad, te dejo también el podcast de la ETSISI donde entrevistan a **Jorge Blasco**, profesor de Seguridad.  
+_No tiene la mejor calidad de audio, pero se lo están currando los de delega 👏_:  
+🔗 [Podcast ETSISI – Jorge Blasco](https://youtu.be/VcxXl5q3e-w?si=b83fa0kvk_iQUwSA)
