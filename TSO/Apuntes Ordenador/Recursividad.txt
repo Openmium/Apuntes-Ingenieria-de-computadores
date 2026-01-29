@@ -1,5 +1,0 @@
-ls -R <-- lista todos los ficheros y directorios que cuelgan del directorio en el que se está
-
-rm -r <-- elimina todo hacia abajo
-
-du -a <-- ocupacion de disco desde donde estamos

@@ -1,0 +1,16 @@
+EXAMEN DE TALLER
+
+1.- Implemente la funcion, con  prototipo (char letra_leida(unsigned *)) que devuelva la letra del DNI leida y que devuelva a traves de parametro el numero de intentos que hemos realizado para leer correctamente dicha letra. Se debe comprobar que el char leido sea una mayuscula 
+
+
+
+
+
+
+2.- Implementar la funcion con prototipo (void print_digito_leido()) que lee un digito del DNI como char, y lo printa una vez comprobado que el char leido sea un digito. Se debe utilizar asignación dinamica de memoria para las variables locales a dicha función.
+
+
+
+
+
+3.- Implementar la funcion, con prototipo (void construir_DNI(unsigned *, char)) que accediendo aun DNI a medio construir, y con un nuevo digito, construye otro DNI que ya incluye ese digito.

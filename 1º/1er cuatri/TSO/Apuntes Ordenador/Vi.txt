@@ -1,0 +1,16 @@
+Vi fich(s) <-- edita ficheros
+
+-------------MODO COMANDO------------
+:wq <-- salir y guardar
+:q <-- salir
+:q! <-- salir sin guardar
+
+↑ esc                   ↓ i,a,A 
+------------MODO INSERCIÓN----------
+
++++Tarea: codifica primer.sh para que entre
+lunes
+martes
+(ponga puntos)..........................
+sabado 
+domingo

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1700148912 source:c:\users\pablo\documents\c\practica 5\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

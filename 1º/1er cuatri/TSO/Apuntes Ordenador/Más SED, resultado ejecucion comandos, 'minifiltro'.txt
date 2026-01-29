@@ -1,0 +1,11 @@
+*p → print
+*r → read
+*a → add
+
+sed -e '/r/,/u/d' dias
+sale lunes
+
+porque estamos borrando las que cumplan el rango, lunes no cumple porque buscamos una r martes se va porque tiene una r luego elimina hasta que encuentra la u de jueves, y viernes se elimina porque contiene una r y cumple el rango y elimina hasta el final, solo queda lunes.
+
+
+

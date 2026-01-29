@@ -1,0 +1,93 @@
+memoria como contenido o memoria como direccion
+↓
+a=(a+0)=&a[0] ←direccion de memoria
+
+a[3] *(a+3) ← contenido memoria
+
+
+______________________________________
+ARRAY ← es memoria (int int int int)
+
+int tabla[10] ={0};
+int *p;
+p = tabla // tabla = $tabla[0]
+*p = 0; //tabla[0] = 0
+
+///////////////////////////////
+
+int tabla[100];
+int *p = tabla;
+int *q
+
+tabla -igual- &tabla[0]
+p + 3 -igual- &tabla[3]
+
+///////////////////////////////////
+
+
+*p++ primero apunta al siguiente y luego te da el valor
+
+(*p)++ se incrementa el valor apuntado por p y este no cambia
+
+*++p (de derecha a izq) p pasa a apuntar al siguiente elemento y luego se obtiene el valor de la nueva direccion
+
+
+++ como operador unario precede al * aunque este tambien es unario
+
+____________________________________
+ARRAYS MULTIDIMENSIONALES
+(matrices)
+
+ajedrez
+↓
+char ajedrez [8][8]
+//Q reina blanca, q reina negra
+
+char guerra_barcos[8][8]
+//AAAA acorazado, S submarino
+
+for crear filas
+  for  crear columnas
+
+
+
+///////////////////////////////////////
+
+EJERCICIO EXAMEN
+
+Escribir un programa que lea de teclado letras mayusculas (cualquier otro caracter introducido no se tendrá en cuenta) hasta que aparezca la Z. Después deberá imprimir, para las mayusculas que hayan aparecido, cuantas veces lo han hecho y su porcentaje frente al resto, si una letra no ha aparecido no se debera mostrar.
+
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+
+
+Scanf trabaja con el buffer
+al hacer fflush(stdin) borra lo que hay en el buffer para que no moleste luego si se escanea algo nuevo
+
+
+///////////////////////////////////////
+
+EJERCICIO EXAMEN
+
+Implementar una funcion que, pasandole como parametros una matriz M*N caracteres (siendo M y N ctes definidas previamente) y dos letras minusculas que representan un intevalo (se garantiza que la primera es inferior o igual a la segunda), ponga a ' ' todas las posiciones de la matriz que contengan una letra minuscula comprendida en el rango pasado como parametro.
+
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+char [M][N]
+
+blanco ([M][N], 'n1', 'n2')
+↑ 
+lo que le metes a la funcion
+
+
+
+
+
+
+
+
+
+
+
+
+

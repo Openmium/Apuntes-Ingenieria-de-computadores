@@ -1,0 +1,170 @@
+Implementar una funcion que, pasandole como parametro una matriz de MxN enteros (siendo M y N ctes definidas previamente), devuelva __________(a través de los parametros) la fila y la columna en la que se encuentra el mayor valor.
+
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+
+Empezamos con un array de ints, hay que encontar la fila y la columna en la que este el int más grande:
+
+void encontrar(int[...]
+
+para pasar por las columnas y filas usamos for anidados:
+for(f=0; f<=M-1; f++)
+  for(c=0; c<=N-1; c++)
+
+declarar array
+
+
+diferenciar printar y devolver, devolver es return y el problema de este ejercicio es que no se puede devolver dos parametros
+
+
+
+___________________________________________
+Implementar una funcion que, pasandole como parametro una matriz de NxN digitos (0..9)(siendo N una constante definida previamente), imprima por pantalla el número de veces que aparece cada digito en la matriz.
+
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+
+void cal_digito(unsigned int matriz[N][N]);
+
+unsigned int matriz[N][N]
+
+para saber el numero de digitos que hay definimos otra matriz:
+
+unsigned int digitos [N][N]={0} // para iniciar desde el principio
+
+for(f=0; f<=M-1; f++)
+  for(c=0; c<=N-1; c++)
+
+digito[matriz[f][c]]++  
+
+
+
+___________________________________________
+Escribir un programa que lea de teclado números enteros (al menos uno) que irá sumando en una variable (inicializada a 0). Por cada número leído imprimirá ese valor y la suma acumulada hasta ese momento. EL programa acabará cuando la suma de todos los números leídos sean 0.
+
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+
+
+
+
+___________________________________________
+Escribir un programa que vaya leyendo de teclado numeros enteros y los almacene en un array de N posiciones (siendo N una cte definida previamente) de forma que los negativos se vayan almacenando en la parte izquierda del array y los positivos (excluyendo el 0) en la parte derecha según vayan llegando. El programa dejará de leer datos cuando el array esté lleno e imprimirá el contenido del mismo. Por ejemplo, si N es 10 y se introduce la secuencia de números: 2, 11, -6, -5, 0, -47, -31, 35, 0, 9, 0, 0, -8, 0, -26, el array que se imprimirá será:
+
+ -,-,-,-,-,-,-,-,-,(los ceros no cuentan según el enunciado),+,+,+,+,+
+
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+
+implementar un contador que empiece de izquierda a derecha para que ponga los negativos, y otro que vaya de derecha a izq el primero deberá incrementarse para ir hacia la der y el segundo decrementará para moverse a la izq.
+
+i=0; j=n-1(osea el final)
+
+
+do 
+ si es mayor de 0 ira a a der
+   si es menor que 0 irá a la izq
+while( i!=j)
+
+
+
+
+___________________________________________
+Escribir una funcion que, recibiendo como parametros una matriz NxN enteros (siendo N una cte ya definida) y dos enteros f y c que representan una fila y una columna dentro de la matriz, ponga a 0 todas las posiciones externas de la submatriz que comienza en la posicion pasada como parametro. No se podrá usar otra matriz auxiliar. Por ejemplo si f=1 y c =2, N=5, la matriz inicial y la resultante son:
+
+1 2 5 7 6  		1 2 5 7 6 
+9 5 1 9 5  		9 5 0 0 0
+1 5 8 1 9  		1 5 0 1 0
+5 5 8 5 6  		5 5 0 5 0
+7 5 3 1 5  		7 5 0 0 0 
+
+
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+
+void recuadrar(int matrirz[N][N], unsigned int f, unsigned int c){ int i;
+
+for(i=f; i<N; i++)
+ matriz[i][c]=0;
+
+for(i=f; i<N; i++)
+ matriz[i][N-1]=0;
+
+for(i=c; i<N; i++)
+ matriz[f][i]=0;
+
+for(i=c; i<N; i++)
+ matriz[N-1][i]=0;
+}
+
+
+
+___________________________________________
+Escribir un programa que lea de teclado un numero entero n entre 2 y 6 que va a determinar el numero de secuencias crecientes a leer. A continuación leera numeros enteros hasta que se hayan leido n secuencias crecientes. Por ejemplo si el numero n es 3, una posible entrada de datos sería:
+
+1 2 8      4 5 7 10     -6 0 8 100      27
+
+
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+
+leo el numero de secuencias es un valor entre dos y seis y luego en un do while estoy haciendo scanf 
+
+
+main()
+{ int n, ant, act;
+
+do{
+printf("introduzca el numero de secuencias crecientes a leer (2..6):");
+scanf("%d", &n);
+}while(n<2 || n>6);
+
+printf("\n\nIntroduzca la secuencia de numeros enteros:\n");
+scanf("%d", &ant);
+
+do{
+scanf("%d", &act);
+ if(ant>act)
+   n--;
+  ant=act;
+}while(n!=0);
+
+return 0;
+}
+
+
+
+___________________________________________
+un programa que lea caracteres hasta que un caracter aparezca repetido 3 veces seguidas. debe imprimir un mensaje por pantalla cual ha sido este carácter.
+
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+
+escaneamos el primer char, queremos mirar al menos 3 char y los leemos fuera del while y ponemos el fflush delante del 2º y 3º scanf, mientras el caracter 1 es distinto del dos o el caracter 2 es distinto del tres. c1 c2 c3 son los tres char si son distintos c1=c2 y c2=c3 y ahora leo el siguiente char en la posicion que se ha dejado libre 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

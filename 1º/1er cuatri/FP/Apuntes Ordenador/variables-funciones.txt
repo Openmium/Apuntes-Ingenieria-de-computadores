@@ -1,0 +1,46 @@
+____________________________
+FUNCIONES (siempre llevan parentesis lleven o no lleven parametros)
+
+No se puede declarar una funcion dentro de otra funcion
+
+
+
+
+int .(parametros){
+return .;
+}
+
+VARIABLES LOCALES 
+int cuadrado(int y){
+return y*y;
+}
+
+int main()
+{
+int x;
+printf("int ?");
+scanf("%i",&x);
+
+printf("%i", x*x);
+    return 0;
+}
+
+-----------------------------
+Void ←no hace return
+
+
+parametro actual 1,2,3,4,5,6,,7,8,9...
+parametro formal x,y,z..
+
+
+int cuadrado (int y); ← definicion
+                            ↑
+                 antes del "int main()"
+int cuadrado (int ); ← declaracion (orientativo)
+                             ↑
+                     debajo del main
+
+
+
+
+

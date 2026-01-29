@@ -1,0 +1,167 @@
+busca en el repositorio el programa sin poner directamente el nombre del programa
+
+export PATH=
+echo $PATH
+
+si PATH esta vacío porque echo funciona
+echo esta integrado en la bash y por tanto no está en el PATH, el resto de comandos que estaban en la bash no se podrán ejecutar
+
+
+export PATH=/bin
+echo $PATH
+/bin
+
+al hacer esto solo se podrán usar los comandos que estén en bin 
+
+
+la bash al cerrarse no guarda ninguna variable, al terminar corta y restablece la variable
+
+
+
+PERMISOS
+Tipos (si no se puede leer (r) no se puede ejecutar)
+
+(4)r - read
+(2)w - write
+(1)x - ejecucion en ficheros
+
+Grupos (comando "id")
+1er propietario del fichero 
+2do grupo al que pertenece el usuario
+3er resto de usuarios
+
+
+chmod <-- cambia los permisos se le tiene que dar que permiso se quiere o numericamente o simbolicammente
+
+
+
+chmod 052 kk <-- fichero kk
+ls -l kk
+
+
+
+
+NOTACION SIMBOLICA
+propietario (u)
+grupo (g
+resto de usuarios (o)
+
+
+el permiso de ejecucion en directorios es como la clave de paso
+
+
+un script con permisos de ejecución se ejecuta como si fuese un ls 
+
+
+
+
+Umask (mascara de permisos por defecto)
+[0] [0][2][2]
+
+[0] (permisos especiales no damos) [0][2][2]([usuario[0] [0][2][2](][grupo][todos los demas])<-- pero esto son los permisos que no se quiere que se tengan
+
+cuando se crear ficheros esta es la mascara con la que se crean
+
+
+umask 0<--especial(0) 066<-- nueva mascara para los siguientes archivos, quitas a "grupo" y "todos los demas" todos los permisos
+
+
+la simbolica dice que permisos se quieren y en la numerica se dice que permisos NO se quieren
+
+
+umask u=rw
+
+
+al salir  y volver a entrar la bash aparece con los mismos permisos
+
+$HOME/.profile <-- se ejecuta cuando entras en la cuenta <-- si en cualquiera de estos le pones umask xxxx iniciará con esos permisos
+
+.bashrc <-- se ejecuta cuando se ejecuta la bash
+.login <-- 
+
+
+
+los permisos se guardan en los metadatos de los ficheros
+
+
+
+
+TAR <-- mover un dir con ficheros (sin copiar ni pegar)
+guarda una figura arborea en un fichero y se puede expandirla de nuevo
+-crear el contenedor
+-mirar dentro del contenedor
+-sacar lo que tiene el contenedor
+
+tvf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

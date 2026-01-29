@@ -1,0 +1,104 @@
+EXAMEN (<comprobar que lo valores escaneados son correctos>)
+
+
+si hay un if anidado el else va con el if más cercano:
+if (i >= 0)
+ if (i > 10000)
+ printf (“Demasiado grande.\n”);
+ else;
+
+
+Si se quiere meter un if anidado y que el else vaya con el else de arriba se hace:
+
+if (i >= 0)
+ {if (i > 10000)
+ printf (“Demasiado grande.\n”);}
+else;
+
+En C los blancos solo sirven para hacer el codigo más claro pero a la máquina no le importan
+
+
+SWITH
+
+Sintaxis de un swith(integer o char)
+break rompe con la secuencia dada de un switch
+
+
+WHILE
+↑ este compruba primero y luego hace
+↓ este hace y luego comprueba
+DO WHILE (cuando el ejercicio dice "hasta", "al menos")
+
+___________EJERCICIO__________________
+
+Escribir un programa en C que lea
+caracteres por teclado, si se lee una letra
+mayúscula imprima la correspondiente
+minúscula y viceversa, si lee un dígito
+imprima el valor resultante de sumarle
+80. Cualquier otro carácter no se
+imprimirá.
+El programa termina cuando se lea un ‘*’
+__________________________________________
+
+
+FOR
+
+int j;
+for (j=5; j!=0; j--){
+ printf("%i\n", j);
+}
+
+Lo anterior es igual a:
+
+int j;
+j=5;
+while (j!=0){
+ printf("%i\n", j);
+ j--;
+}
+
+
+GETCH ← no printa el numero?
+
+
+___________Preprocesador___________________
+
+#include
+#define pp printf 
+#define EOF -1
+
+
+
+while (j!=0); = while (j);
+
+
+_________EJEMPLO___________________________
+Tabla de multiplicar
+
+
+for (j=1; j<=n; j++)
+printf("%3j", j);
+printf(\n);
+for (k=1; k<=n; k++){
+printf("%5i", k);
+ for (j=1; j<=n; j++)
+  (↑ anidado)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

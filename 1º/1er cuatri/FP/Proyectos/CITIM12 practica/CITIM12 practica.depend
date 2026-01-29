@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1699187180 source:c:\users\pablo\documents\c\citim12 practica\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

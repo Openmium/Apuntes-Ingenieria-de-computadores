@@ -1,0 +1,61 @@
+wc -l -w -c dias
+
+uniq -c 
+↑     ↑cuenta cuantos hay de lo mismo cerca
+quita las duplicadas
+
+
+cut -d(delimitador, especificar caracter delimitador) -f (especificar campo -f1 -f2)
+
+cut -c(columnas)
+
+paste
+
+EN SERIES DE COMANDOS UNIDOS POR PIPES
+(uso de -(guion))
+
+
+cat col.1 | paste - col.2
+↑
+primero cat luego paste
+
+
+cat col.1 | paste col.2 -
+↑
+primero paste luego cat
+
+
+cat col.1 | paste - col.2 -
+↑
+va cogiendo a la entrada de col.1 luego sigue con col.2 y coge la siguiente de col.1 y la pone detras de col.2
+
+(l u m
+ m m j
+ v m s
+ d j
+   v
+   s
+   d  )
+
+(col.1 y col.2 son cuts de los dias de la semana)
+
+
+comm (A-B; B-A; A union B)← operaciones sobre conjuntos
+
+
+join ← solo permite dos ficheros f1 f2 que deben estar ordenados
+
+join -o (output) k(fichero).n(parte a mostrar) k2(fichero2).n2(parte a mostrar2)
+
+
+join -o 1.2 2.2
+
+
+
+
+
+
+
+
+
+

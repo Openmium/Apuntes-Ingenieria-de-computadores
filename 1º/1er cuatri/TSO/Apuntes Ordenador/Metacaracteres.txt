@@ -1,0 +1,50 @@
+________________METACARACTERES (FICHEROS Y DIRECTORIOS)_____________________________________
+*a <-- ficheros o directorios que terminen por la a
+a* <-- ficheros o directorios que empiecen por la a
+*a* <-- ficheros o directorios que contengan la a
+
+
+? <-- puede ser sustituido por cualquier caracter
+??*
+*??
+?*?
+
+ejemplo: 
+echo ?a*z? <-- muestra un ficehro o directorio cuya segunda letra sea una a y penultima sea una z
+
+
+[] <-- expresa un conjunto
+
+ejemplo: (a, b y c son directorios o librerias)
+?[abc]*z?
+   ↑
+se puede poner como rango [a-m]
+para romper el rango y añadir alguno más [a-mz]
+si se quiere seguir con el rango [a-mo-z]
+
+
+[^ ] <-- expresa un conjunto negado
+
+
+EJEMPLO: poner una fecha hasta el mes y del año 2023
+DD-MM-YYYY
+??-0[1-6]-2023
+           ↑
+estos son constantes por el ejemplo
+
+si no los hacemos constante y hacemos desde el 2010 hasta el 2023 mostrando solo los impares
+??-0[1-6]-201[13579] ??-0[1-6]-202[13]
+                                    ↑
+se hace en dos líneas; lo dejamos de la década de los 20 en el año actual
+si hacemos ??-0[1-6]-20[12][13579]
+                 ↑
+estamos incluyendo toda la decada 10 y 20 incluso años posteriores al actual.
+
+
+
+
+
+
+
+
+

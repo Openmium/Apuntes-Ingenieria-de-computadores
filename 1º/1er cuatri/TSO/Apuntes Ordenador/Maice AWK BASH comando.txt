@@ -1,0 +1,176 @@
+Comillas inversas 
+VAR1=´cat dias´  igual a  VAR1=$(cat dias)
+↑
+esto para guardar en una variable
+
+
+
+for d in $(cat dias)
+
+do
+	echo --------- $d ---------
+done
+
+↑↑
+la salida es:
+--------- lunes ---------
+--------- martes ---------
+--------- miercoles ---------
+--------- jueves ---------
+--------- viernes ---------
+--------- sabado ---------
+--------- domingo ---------
+
+
+
+
+touch IMG-$(date +'%y-%m-%d')
+ ls IMG-*
+↑↑
+la salida es IMG-23-11-20
+
+
+
+
+for d in $(cat meses)
+do
+	touch $d
+
+↑
+d va tomando enero febrero ... en cada iteracion 
+
+
+
+
+make construye invocando al compilador
+
+makefile ← fichero de configuracion de make (implementación de reglas) ← la fecha de las reglas establecen cuando se ejecutan 
+
+g: f e              ← requisitos 
+<tab> touch g       ← acciones
+f: d
+<tab> touch f
+e: d c
+<tab> touch e
+d: a b
+<tab> touch d
+a:
+<tab> touch a
+b:
+<tab> touch b
+c:
+<tab> touch c
+
+[     g     ]    	g	←
+[ f ][   e  |        f     e    ←    arbol
+[    d  ]   ]        d          ←     de
+[a ] [b ][ c]       a  b   c    ← dependencias (grafo)
+
+
+make g ← comienza la construccion (se hace en orden)
+
+touch a
+touch b
+touch d
+touch f
+touch c
+touch e
+touch g
+
+
+//////////////////////////////////////////////////////////////////////////
+AWK
+
+string substr(tira, <posicion>, <longitud>) - sub string
+
+int length(tira) - longitud
+
+int index(tira, <posicion>) - busqueda
+
+int split(tira, <array>, <separador>)
+
+
+
+echo "alumno:matricula:grupo:titulacion:nota" | 
+awk '{n=split($0, v, ":"); print v[1],v[2],v[5]}'
+↑↑
+salida:
+alumno matricula nota
+
+
+
+
+awk '{l[NR]=$0} END { for (i=NR; i>0; i--) print l[i]}' dias
+↑
+guarda en un array l los dias y luego con el for lo imprime al revés
+
+↑↑
+salida:
+domingo
+sabado
+viernes
+jueves
+miercoles
+martes
+lunes
+
+
+
+
+awk '{for (i=length($0); i>0; i--)
+printf ("%c", substr($0,i,1));
+printf("\n")}' dias
+
+↑↑
+salida:
+senul
+setram
+selocreim
+seveuj
+senreiv
+odabas
+ognimod
+
+
+
+
+awk 'BEGIN {nc=0; nw=0} {nc+=length($0);
+nw+=NF}
+END {print NR, nw, nc+NR, FILENAME}' dias (FILENAME no entra-+-+-+-+-+-+-+-+-+-+-++)
+
+↑↑
+salida:(imita a wc(word count))
+7 7 53 dias
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

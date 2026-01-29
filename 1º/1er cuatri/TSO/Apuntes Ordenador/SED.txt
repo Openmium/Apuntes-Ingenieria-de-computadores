@@ -1,0 +1,152 @@
+filtro sed es un editor offline, no modifica la entrada, solo vemos la salida cambiada
+↑
+sed <opciones> <parte-donde> <accion>
+
+
+
+<opciones>
+sed -e ←
+damos una orden
+
+
+sed -f 
+damos fichero con ordenes
+
+
+
+<parte-donde>
+(si no hay parte donde se afecta a todas las lineas)
+
+
+Nula
+
+
+Nº linea
+con $
+
+
+Expresiones regulares
+
+
+Rangos (de tal a tal)
++lineas
++Expresiones regulares
+
+
+NOT
+(!)
+
+
+
+<accion>
+
+
+sed d
+delete
+
+
+sed s/_/_/
+sustituir algo por algo
+
+
+
+
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+sed -e '1d' dias
+     ↑  ↑↑accion
+opcion  parte-donde
+
+
+
+
+sed -e '/u/d' dias
+↑        ↑expresion regular entre / /
+borra lineas de contengan una u
+
+
+
+
+sed -e '/u/!d' dias
+↑
+borra todas aquellas que no contienen una u
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+OJO no sirve sed -e '/[^u]/d dias
+porque hay cadenas vacias que hacen que se elimine todo 
+
+
+
+
+sed -e '1d' -e '2d' dias
+↑
+esto solo borra la linea 1 y la 2 del fichero original no borra la primera y como ha borrado la primera la segunda pasa a primera y entonces al borrar la 2 realemnte se borra la 3, esto no pasa porque se elimina la 1 y 2 respecto al original por tanto si se busca obtener el segundo resultado hemos de usar una tubería (sed -e '1d' dias | sed -e '2d' 
+
+
+
+
+
+
+el dilimitador del rango es una coma 
+↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+sed -e '3,5d' dias
+
+
+
+en el caso de:
+
+sed -e '5,3d' dias
+↑va yendo del 1 al 5 y llega a la 5 y la borra pero como ya no esta en el rango de 5 a 3 pues no borra más
+
+
+
+
+
+sed -e '/u/,/r/d' dias
+
+sed -e '/r/,/u/d' dias
+
+
+
+
+
+sed -e '/r/,/[^u]/d' dias
+↑
+funciona de chiripa pero no cumple la expresion regular, porque siempre hay cadenas más pequeñas en las que no hay una u por lo que no cumple
+
+
+
+SUSTITUIR///////////////////////////////
+
+sed -e 's/u/XX/' dias
+↑sustituya donde haya una u con XX
+
+PARA SUSTITUIR GLOBALMENTE PONER g
+
+sed -e 's/o/XX/g' dias
+
+
+
+
+
+
+PROGRAMACIÓN BASH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

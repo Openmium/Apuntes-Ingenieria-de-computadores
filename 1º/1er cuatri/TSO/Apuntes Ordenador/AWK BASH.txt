@@ -1,0 +1,104 @@
+who | tr -s ' )(' ' ' | cut -d' ' -f1,5
+↑
+nos quedamos con el numbre de usuario y
+su IP
+
+
+
+AWK <opciones> '<prologo><donde><programaPrincipal><epílogo>' <fichero-entrada>
+-Filtro programable
+-Estructura de la entrada
+-Salida
+
+<opciones>
+-F <delimitador>
+-f <fichero.awk> //igual a sed :v
+
+<prologo> se ejecuta una sola vez antes del fichero de entrada
+
+begin{}
+
+<epílogo> solo se ejecuta una vez cuando termine de procesar las lineas
+
+<donde> partes de fichero que se ven afectadas por el programa principal
+nada ← afecta a todo
+
+expresion regular
+
+expresion aritmética (<,>,=,>=,<=, pares, impares, modulo x...)
+
+
+<programaPrincipal> 
+{}
+ejemplo: programa lee una linea y lo imprima
+↑
+awk '{print}' dias
+
+awk '{printf("%6d\t%s\n", NR, $0)}' dias
+
+NR ← dice que nº de linea esta siendo procesada
+
+$0 ← lineas completa
+$x ← campo x
+
+
+awk 'NR > 4{printf("%6d\t%s\n", NR, $0)}' meses
+
+NR>4 es la parte donde
+
+NF (number of files) ← cuenta el numero de campos
+
+
+awk 'NR > 4 && NR < 10 {printf("%6d\t%s\n", NR, $0)}' meses
+
+
+awk '/io/ {printf("%6d\t%s\n", NR, $0)}' meses
+↑
+las // delimitan la expresion regular
+
+
+awk -F: '/^bu/ {print $1,$5}' /etc/passwd
+
+
+awk '{print NF, $0}' ../textos/quij01a |head -6
+
+
+BASH
+-Operadores &&(and) ||(or)
+-Evaluación de comandos '' ó $()
+
+last
+
+
+Introducción a MAKE
+
+
+reglas makefile
+↑
+a:-------
+<tab> touch a
+d:---a b 
+<tab> d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

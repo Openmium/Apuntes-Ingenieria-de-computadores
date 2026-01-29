@@ -1,0 +1,54 @@
+Ejercicios de examen 2022-23
+
+
+sed -e 's/\([A-Z]\).*\1//g' -e '/^[A-Z].*/d' -e '/[^.]$/d'
+
+AT$T --> A
+
+se eliminan las lineas  que empiezan por mayuscula
+
+se eliminan las lineas que no terminen en punto 
+
+
+
+
+
+
+el - en tar significa la entrada estandar (y en paste tambien hay guion)
+
+
+
+
+cat dias | paste -dX -- 
+
+lunes X martes 
+miercoles X jueves
+viernes X sabado
+domingo X
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
