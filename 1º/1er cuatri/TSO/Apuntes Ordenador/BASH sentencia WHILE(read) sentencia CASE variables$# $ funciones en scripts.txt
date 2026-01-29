@@ -1,0 +1,137 @@
+WHILE [condicion]
+DO
+    {sentencias}
+DONE
+
+
+while [$x -le 3]; do echo "Estoy en la iteracion $x"; x=$((x+1)); done
+↑
+mientras x less than 3;
+
+
+
+read v1 v2 v3
+hoy hace un dia estupendo
+
+echo $v1
+hoy
+
+echo $v2
+hace
+
+echo $v3
+un dia estupendo
+
+
+
+
+
+read
+hola
+
+echo $REPLAY ← por si se te olvida poner una variable para guardar la lectura
+
+
+
+
+
+while read L
+do 
+    echo $L
+done < dias   ← redirección por fichero
+
+
+
+while read L
+do 
+    echo $L
+done         ← sin redirección terminar con ctrl D para definir final de fichero
+
+
+
+
+
+
+CASE expresion in
+ 
+ opcion-1) sentencia ;;
+
+ opcion-2) sentencia
+           sentencia;;
+     *)
+esac
+
+
+
+
+
+
+$# $*
+
+
+$# ← me dice con cuantos parametros ha sido llamado un script (nº de argumentos)
+echo "el numero de parametros es: $#"
+
+$* ← me dice (todos los parametros)
+echo "el valor de $* es:"
+
+Resumencillo:
+$? ← 
+$$ ← numero del proceso 
+$0 ← el pripio nombre del script
+$1 ← 
+
+
+
+
+
+
+
+FUNCIONES EN SCRIPT
+
+function nombre{
+ sentencias
+}
+
+↑ equivalentes formas de crear funciones ↓
+
+nombre (){
+
+}
+
+
+
+
+como se sabe con cuantos parametros se invoca a la funcion
+↑
+con $# se sabe los parametros que entran
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+mv ← mueve fichero a directorio
+
+mkdir ← make a directory
+
+rmdir ← elimina si está vacio
+
+rm -r ← borra recursivamente (todo lo que haya por debajo)
+
+cp ← copy to
+
+ln ← link (con dos nombres de fichero accedemos al mismo fichero) ← entre ficheros ← ENLACE DURO
+
+echo [...] >> x  ← escribe [...] en fichero x (no escribe por encima)
+
+echo .[^.]*
+     ↑↑ ↑
+longitud minima 2
+empieze por punto
+no tenga otro punto después
+
+__________________________________________________
+ACOTADO 
+'' ← la bash no hace nada, superrestrictivo
+"" ← restrictivo, execepciones $ \ `
+\ ← acotado puntual (quita los "poderes" del caracter que venga seguido)
+
+__________________________________________________
+FILTROS
+tac ← da la vuelta
+
+rev ← da la vuelta horizontal a las palabras
+
+sort ← ordena
+sort -r ← ordena al reves, de mayor a menor
+sort -n ← ordena como numeros
+
+cut -cx ← corta en columnas sacando x 
+cut -cx-x ← corta de x a x
+cut -cx,x,x,x ← saca esas
+cut -cx- ← corta desde x hasta el final
+
+__________________________________________________
+TUBERIAS (|)←(pipe)
+
+grep '^bu' /etc/passwd | cut -d: -f5 | cut -d, -f1 | uniq -c | sort -rn | head -10
+
+
+
+

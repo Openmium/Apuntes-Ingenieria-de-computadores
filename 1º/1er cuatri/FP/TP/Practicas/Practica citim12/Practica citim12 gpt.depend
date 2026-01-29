@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1699185967 source:c:\users\pablo\documents\c\practica citim12 gpt\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

@@ -1,0 +1,24 @@
+Las variables locales se mantienen siempre que siga corriendo la bash, si se reinicia la bash o se crea una nueva bash, se elimina. ← k=" "
+
+SI SE USA UNA SUBSHELL SE SIGUE EN LA MISMA BASH Y POR TANTO SIGUE FUNCIONANDO LA VARIABLE LOCAL ← subshell → (echo $v)
+
+
+
+Las variables de entorno(globales) se mantienen siempre y si se crea una nueva bash esta nueva bash hereda la variable global. ← export k=" "
+Las herencias son siempre de padres a hijos.
+
+
+
+export v="TSO curso2023/24"
+echo "Estoy en p.sh v=$v"
+bash j.sh
+echo "En p.sh w=$w"
+
+↑ este escript llama a este ↓
+
+echo "Estoy en j.sh v=$v"
+export w="UPM" 
+
+↑↑
+como se da valor a w en el escript al que se le pasa la "copia" es el hijo de p.sh y por tanto la w del padre queda sin nada porque no se queda
+

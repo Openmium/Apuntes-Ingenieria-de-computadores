@@ -1,0 +1,131 @@
+FILE *t;
+
+t= fopen("t.txt", "r"); ← que voy a usar, abro para lectura // r, w, a (read, write(reescribe encima), a(añadir))
+
+fscanf(t, "%i", &i); ← como lo voy a usar
+printf("%i \n");
+
+fclose(t);
+
+t es un pointer a un file
+t es una estructura de datos
+
+
+
+
+t= fopen("t.txt", "w");
+scanf("%i", &i);
+fprintf(t, "%i", i); 
+
+
+
+
+if (f==NULL)
+  return -1;
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ ponerlo siempre que se trabaje con archivos aunque sea con w que reescribe si hay y crea si no hay (incluso ahi se pone)
+comprueba que el fichero está
+
+
+
+
+
+fscanf solo devuelve un valor ← es una funcion int, no una funcion void
+
+
+
+
+while(fscanf(f,"%c",&c) != EOF) ← EOF= -1 por tanto es quivalente poner != -1
+
+
+
+
+
+
+
+
+
+
+
+FILE *f_out;
+FILE* f_in;
+char c;
+
+f_in= fopen("f.txt", "r");
+f_out= fopen("g.txt", "w");
+
+if(f_in == NULL)
+  return -1;
+
+while(fscanf(f_in,"%c", &c) != -1)
+	
+	fprintf(f_out, "%c", c);
+
+fclose(f_in);
+fclose(f_out);
+↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+copia fichero a otro 
+
+
+
+
+
+if(f_in==NULL)
+ exit(-1) ← sale directo y tira -1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

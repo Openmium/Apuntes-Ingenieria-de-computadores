@@ -1,0 +1,12 @@
+Listas enlazadas
+listas doblemente enlazadas
+
+los nodos se crean con malloc y se destruyen,
+se liberan con free
+
+
+PUNTEROS A ESTRUCTURAS
+
+
+
+

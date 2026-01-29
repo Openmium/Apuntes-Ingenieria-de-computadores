@@ -1,0 +1,37 @@
+= -->asigna un valor 
+== -->compara el valor
+
+Los operadores binarios sirven para 
+a+=5 --> a=a+5
+i*=j+7 --> i=i*(j+7)
+
+Sin embargo los operadores unitarios como: !
+__ESTO NO SIRVE__
+a!=2 -->MAL
+
+
+
++Conversor de tipos (cast)
+
+(float)7/2=3.5
+(float)(7/2)=(float)(3)=3.0
+
+
+
+Entrada/salida estandar
+
+printf("como(formato)", que)
+
+char c=´s´ <-- Char 
+char s="sergio" <-- String (secuencia de chars) 
+
+
+
+Para leer string:
+scanf("%c%s", &c, s);
+
+El string empieza en &s(0)=s
+&c para char y &i para integers
+
+
+

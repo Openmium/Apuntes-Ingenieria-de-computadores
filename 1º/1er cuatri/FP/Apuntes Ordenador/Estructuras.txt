@@ -1,0 +1,65 @@
+Es una agrupación de datos, un array es una estructura muy basica.
+
+
+
+
+fflush(stdin);
+antes de leer scanf("%c") siempre un flush 
+
+
+void scan_ALUMNO(struct *a){
+
+pp("edad ?");
+scanf("%u", & (*a).edad);
+
+pp("nombre ?");
+fflush(stdin);
+gets( (*a).nombre);
+}
+
+
+En lugar de poner (*a) podemos declarar en scanned_ALUMNO() ←(pasamos por return y no por referencia) la estructura ALUMNO a y con eso en el main 
+darla a la funcion print la estructura directamente sin hacer dos pasos
+
+struct ALUMNO * scanned_alumno(){
+
+struct ALUMNO a;
+
+pp("edad ?");
+scanf("%u", &a.edad);
+
+pp("nombre ?");
+fflush(stdin);
+gets(a.nombre);
+
+scan_FECHA (& a.nac);
+
+return a; //devolvemos el valor de la estructura que luego irá a la función que printa la estructura 
+}
+
+
+
+typedef ← para no tener de declarar struct y no volver a mencionarla 
+en el resto del programa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

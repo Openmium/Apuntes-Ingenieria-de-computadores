@@ -1,0 +1,72 @@
+#include <string.h>
+Por norma general todas devuelven un pointer
+
+strstr busca subcadenas(substring)
+
+strchr
+
+strncmp←no devuelve pointer
+
+strcat
+
+itoa convierte de interer a string(ascii)
+↑
+sirve para cambiar la base
+
+
+mirar funciones <ctype.h>
+
+
+scan("%2d %d", a, b) ← mete en a los primeros dos caracterres
+
+
+gets
+
+puts
+
+
+<conio.h>
+
+int getch (void) ← sin intro (no se muestra)
+
+int getche (void) ← hace eco (se muestra) sin intro
+
+getchar ← con intro
+
+
+VOID *MEMCPY(VOID *A1, CONST VOID *A2, UNSIGNED N)
+memcpy ← trabaja con memoria, sirve para arrays y demás
+
+
+VOID *MEMMOVE()//NO LO VAMOS A VER, POR AHORA ?
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+strcmp está incluida en memcmp pero strcmp es más sencilla, pero memcmp es polivalente, es más mejor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

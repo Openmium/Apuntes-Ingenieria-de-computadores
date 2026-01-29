@@ -1,0 +1,11 @@
+&c dice donde se situa el contenido de c
+
+igualmente↨ (es lo mismo)
+
+m tiene la informacion de memoria y si se quiere exponer que es m se puede hacer con *m
+
+scan lleva & porque quiere modificar la memoria
+
+______________________________________
+RECURSIVIDAD
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1699125608 source:c:\users\pablo\documents\c\asignacion dinamica de memoria a un array\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

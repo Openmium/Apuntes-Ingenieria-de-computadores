@@ -1,0 +1,76 @@
+____________________________
+FUNCIONES (siempre llevan parentesis lleven o no lleven parametros)
+
+No se puede declarar una funcion dentro de otra funcion
+
+
+
+
+int .(parametros){
+return .;
+}
+
+VARIABLES LOCALES 
+int cuadrado(int y){
+return y*y;
+}
+
+int main()
+{
+int x;
+printf("int ?");
+scanf("%i",&x);
+
+printf("%i", x*x);
+    return 0;
+}
+
+-----------------------------
+Void ←no hace return
+
+
+parametro actual 1,2,3,4,5,6,,7,8,9...
+parametro formal x,y,z..
+
+
+int cuadrado (int y); ← definicion
+                            ↑
+                 antes del "int main()"
+int cuadrado (int ); ← declaracion (orientativo)
+                             ↑
+                     debajo del main
+
+
+________________________________________
+REPASO
+
+(int *m) ← m cuyo contenido es un interer osea m es memoria
+
+
+ASIGNACOIN DINAMICA DE MEMORIA
+
+char *d;
+d=(char*)malloc( sizeof(char)); // creamos manualmente espacio en memoria para un char
+printf("char?");
+scanf("%c", d);
+printf("&d > %p \n", &d);
+printf("d > %p \n", d);
+printf("*d > %c \n", *d);
+printf("*d (b10) > %d \n", *d);
+printf("*d (b16) > %x \n", *d);
+free(d); //libera el espacio que se ha creado y reservado en memoria
+
+
+
+scan_int ← me ahorro el %i
+printf_int ← ahorro %i 
+&m, *m, m ← depende en que se use y como se use la direccion de memoria deberá ser así, segun sea contenido o direccion de memoria
+
+
+
+
+
+
+
+
+
