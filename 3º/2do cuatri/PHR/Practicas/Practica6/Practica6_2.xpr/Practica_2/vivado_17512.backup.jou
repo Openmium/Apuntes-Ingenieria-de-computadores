@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Apr 12 13:48:40 2026
+# Process ID         : 17512
+# Current directory  : C:/Users/pablo/AppData/Roaming/Xilinx/Vivado
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent17008
+# Log file           : C:/Users/pablo/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file       : C:/Users/pablo/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Running On         : PABLO
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 7530U with Radeon Graphics         
+# CPU Frequency      : 1996 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16516 MB
+# Swap memory        : 10737 MB
+# Total Virtual      : 27253 MB
+# Available Virtual  : 16398 MB
+#-----------------------------------------------------------
+start_guiopen_project {C:/Users/pablo/Documents/Vivado Projects/Practica_2/Practica_2.xpr}
+update_compile_order -fileset sources_1
+reorder_files -fileset constrs_1 -before {C:/Users/pablo/Documents/Vivado Projects/Practica_2/Practica_2.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc} {{C:/Users/pablo/Documents/Vivado Projects/Practica_2/Practica_2.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc}}
+launch_simulation
+source divisores.tcl
+restart
+run 80 ns
+restart
+run all
+run all
+run all
+run 80 ns
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+restart
+run 10 s
+close_sim
+launch_simulation
+source test.tcl
+restart
+run 10 s
+close_sim
+archive_project C:/Users/pablo/Desktop/PHR/Practica6/Practica6_2.xpr.zip -temp_dir C:/Users/pablo/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-17276-PABLO -force -include_local_ip_cache
+launch_simulation
+source test.tcl
+restart
+restart
+restart
+run 5 s
+close_sim
+launch_simulation
+source test.tcl
+restart
+run 1 s
+close_sim
+archive_project C:/Users/pablo/Desktop/PHR/Practica6/Practica6_2.xpr.zip -temp_dir C:/Users/pablo/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-17276-PABLO -force -include_local_ip_cache

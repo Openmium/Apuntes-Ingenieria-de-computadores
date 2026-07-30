@@ -1,0 +1,7 @@
+Running: xsim.dir/test_PAL_realimentacion_behav/xsimk.exe -simmode gui -wdb test_PAL_realimentacion_behav.wdb -simrunnum 0 -socket 9945
+Design successfully loaded
+Design Loading Memory Usage: 10776 KB (Peak: 10776 KB)
+Design Loading CPU Usage: 78 ms
+Simulation completed
+Simulation Memory Usage: 11676 KB (Peak: 11676 KB)
+Simulation CPU Usage: 155 ms

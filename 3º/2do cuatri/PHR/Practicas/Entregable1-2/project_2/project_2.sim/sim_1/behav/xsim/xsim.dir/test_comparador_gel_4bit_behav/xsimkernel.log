@@ -1,0 +1,7 @@
+Running: xsim.dir/test_comparador_gel_4bit_behav/xsimk.exe -simmode gui -wdb test_comparador_gel_4bit_behav.wdb -simrunnum 0 -socket 9894
+Design successfully loaded
+Design Loading Memory Usage: 10828 KB (Peak: 10828 KB)
+Design Loading CPU Usage: 77 ms
+Simulation completed
+Simulation Memory Usage: 11692 KB (Peak: 11692 KB)
+Simulation CPU Usage: 155 ms

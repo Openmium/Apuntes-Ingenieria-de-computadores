@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/Vivado Projects/Practica6_1/Practica6_1.srcs/sources_1/new/Practica.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cable'
+INFO: [VRFC 10-3107] analyzing entity 'S7_Segmt'
+INFO: [VRFC 10-3107] analyzing entity 'test'

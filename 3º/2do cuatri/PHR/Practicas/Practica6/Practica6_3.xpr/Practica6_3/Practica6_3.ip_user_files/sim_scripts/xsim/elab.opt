@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt 2  -L xil_defaultlib -L secureip --snapshot conversor xil_defaultlib.conversor -log elaborate.log

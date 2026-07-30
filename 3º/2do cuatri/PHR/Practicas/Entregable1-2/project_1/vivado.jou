@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Mar 23 22:15:42 2026
+# Process ID         : 24800
+# Current directory  : C:/Users/pablo/Documents/Vivado Projects/project_1
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent29144 C:\Users\pablo\Documents\Vivado Projects\project_1\project_1.xpr
+# Log file           : C:/Users/pablo/Documents/Vivado Projects/project_1/vivado.log
+# Journal file       : C:/Users/pablo/Documents/Vivado Projects/project_1\vivado.jou
+# Running On         : PABLO
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 7530U with Radeon Graphics         
+# CPU Frequency      : 1996 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16516 MB
+# Swap memory        : 13369 MB
+# Total Virtual      : 29885 MB
+# Available Virtual  : 9241 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/pablo/Documents/Vivado Projects/project_1/project_1.xpr}
+update_compile_order -fileset sources_1

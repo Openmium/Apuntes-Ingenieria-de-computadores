@@ -1,0 +1,20 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot test_PAL_realimentacion_behav xil_defaultlib.test_PAL_realimentacion -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture flujo_de_datos of entity xil_defaultlib.and_N [\and_N(n=8)\]
+Compiling architecture flujo_de_datos of entity xil_defaultlib.or_N [or_n_default]
+Compiling architecture comportamiento of entity xil_defaultlib.triestado [triestado_default]
+Compiling architecture estructural of entity xil_defaultlib.PAL_4L2 [\PAL_4L2(fusibles5="10000010",fu...]
+Compiling architecture implementacion_realimentacion of entity xil_defaultlib.PAL_test_realimentacion [pal_test_realimentacion_default]
+Compiling architecture testeando_realimentacion_pal of entity xil_defaultlib.test_pal_realimentacion
+Built simulation snapshot test_PAL_realimentacion_behav

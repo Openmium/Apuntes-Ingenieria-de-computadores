@@ -1,0 +1,7 @@
+Running: xsim.dir/test_expansor_behav/xsimk.exe -simmode gui -wdb test_expansor_behav.wdb -simrunnum 0 -socket 5607
+Design successfully loaded
+Design Loading Memory Usage: 10740 KB (Peak: 10740 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 11652 KB (Peak: 11652 KB)
+Simulation CPU Usage: 77 ms

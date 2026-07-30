@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "test_comparador_gel_1bit_behav" "xil_defaultlib.test_comparador_gel_1bit" -log "elaborate.log" 

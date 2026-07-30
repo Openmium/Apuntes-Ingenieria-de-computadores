@@ -1,0 +1,23 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot test_comparador_gel_4bit_behav xil_defaultlib.test_comparador_gel_4bit -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture flujo_de_datos of entity xil_defaultlib.inversor [inversor_default]
+Compiling architecture flujo_de_datos of entity xil_defaultlib.producto [producto_default]
+Compiling architecture flujo_de_datos of entity xil_defaultlib.suma [suma_default]
+Compiling architecture estructural of entity xil_defaultlib.comparador_1bit [comparador_1bit_default]
+Compiling architecture estructural of entity xil_defaultlib.expansor [expansor_default]
+Compiling architecture estructural of entity xil_defaultlib.comparador_1bit_expansor [comparador_1bit_expansor_default]
+Compiling architecture estructural of entity xil_defaultlib.comparador_4bit_expansor [comparador_4bit_expansor_default]
+Compiling architecture testeandocomparator_gel_4bit of entity xil_defaultlib.test_comparador_gel_4bit
+Built simulation snapshot test_comparador_gel_4bit_behav
