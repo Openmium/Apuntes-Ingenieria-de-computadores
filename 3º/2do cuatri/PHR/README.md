@@ -44,4 +44,4 @@ Ten también paciencia con las **notas**: pueden tardar en salir, así que no de
 
 - **Practica mucho para el examen de prácticas**. Es habitual salir con la sensación de que el tiempo no alcanza, así que intenta acostumbrarte a trabajar con rapidez en Vivado.
 - Para el **proyecto final**, intenta incorporar **algún periférico externo** de la FPGA (botones, LEDs, sensores, pantalla, etc.). Además de hacer el proyecto más interesante, suele valorarse positivamente.
-- Y un último consejo: el día de la **defensa** ve con una vestimenta mínimamente formal. No hace falta traje, pero **unos pantalones largos** aunque sea junio pueden marcar la diferencia en la impresión que das.
+- Y un último consejo: el día de la **defensa** ve con una vestimenta mínimamente formal. No hace falta traje, pero **unos pantalones largos** aunque sea junio para Vicente es **importante**.
